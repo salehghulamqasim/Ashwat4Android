@@ -2,6 +2,25 @@
 
 A minimal Flutter MVP for automatically tracking Tawaf (circles around the Kaaba) and Sa'i (walking between Safa and Marwah) during Hajj and Umrah.
 
+## Project Structure
+
+The project follows a clean architecture pattern with clear separation of concerns:
+
+```
+lib/
+├── core/                    # Application-wide functionality
+│   └── theme/              # Theme configuration
+├── features/               # Feature modules
+│   └── tracking/          # Tracking feature
+│       ├── cubit/         # State management (BLoC)
+│       └── presentation/  # UI layer
+│           ├── screens/   # Full screen widgets
+│           └── widgets/   # Reusable widgets
+└── main.dart              # App entry point
+```
+
+For detailed architecture documentation, see [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ## Features
 
 ### Core Functionality
